@@ -1,8 +1,24 @@
 
+.navbar.bg-grey {
+    background:#474a4c;
+    height: 5%;
+}
+
+
+.navbar-nav a.nav-item.nav-link {
+        color: whitesmoke;
+        font-family: 'IBM Plex Sans Condensed', sans-serif; 
+        font-size: 1.5rem;
+        
+        
+    }
+
+
 .container-fluid {
     font-family: 'Roboto', sans-serif;
     color:#474a4c;
 }
+
 
 h1 {
     font-family: 'Roboto', sans-serif;
@@ -19,13 +35,30 @@ h3 {
 p {
    
 }
-
-.nav {
-    font-size: 1.25rem;
+/* NAV THEFT */
+/* body {
+    position: relative; 
 }
+#section1 {padding-top:50px;height:500px;color: #fff; background-color: #1E88E5;}
+#section2 {padding-top:50px;height:500px;color: #fff; background-color: #673ab7;}
+#section3 {padding-top:50px;height:500px;color: #fff; background-color: #ff9800;}
+#section4 {padding-top:50px;height:500px;color: #fff; background-color: #00bcd4;} */
+
+/* END NAV THEFT */
+
 /* TOP HEADER DIV */
 .top-box-container{
     background-color: lightcyan;
+    background: #FF4E50;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #F9D423, #FF4E50);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #F9D423, #FF4E50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: #304352;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #d7d2cc, #304352);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #d7d2cc, #304352); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: #304352;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #d7d2cc, #304352);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #304352, #d7d2cc, #304352); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 .top-header h1 {
@@ -66,7 +99,7 @@ p {
 .cube {
     text-align: center !important;
     background-color: lightyellow;
-     padding: 3% 0% 18% 0%    
+    padding: 3% 0% 18% 0%    
 }
 
 .spinner  {
@@ -181,6 +214,66 @@ spinner:hover {
 .active {
     background-color: rgb(55, 84, 128); /* Add an active/current color */
 }
+
+
+
+@media (min-width: 992px) and (max-width: 5000px) {
+    .spinner div {
+        width: 240px;
+        height: 240px;
+        font-size: 40px;
+        line-height: 240px;
+    }
+    .spinner  {
+        margin: 0 auto;
+        width: 240px;
+        padding-top: 35%;
+    }
+    .spinner .face1 { 
+        -webkit-transform: translateZ(120px);
+        -ms-transform: translateZ(120px);
+        transform: translateZ(120px);
+    }
+    .spinner .face2 { 
+        -webkit-transform: rotateY(90deg) translateZ(120px); 
+        -ms-transform: rotateY(90deg) translateZ(120px); 
+        transform: rotateY(90deg) translateZ(120px); 
+    }
+    .spinner .face3 { 
+        -webkit-transform: rotateY(90deg) rotateX(90deg) translateZ(120px); 
+        -ms-transform: rotateY(90deg) rotateX(90deg) translateZ(120px); 
+        transform: rotateY(90deg) rotateX(90deg) translateZ(120px); 
+    }
+    .spinner .face4 { 
+        -webkit-transform: rotateY(180deg) rotateZ(90deg) translateZ(120px); 
+        -ms-transform: rotateY(180deg) rotateZ(90deg) translateZ(120px); 
+        transform: rotateY(180deg) rotateZ(90deg) translateZ(120px); 
+    }
+    .spinner .face5 { 
+        -webkit-transform: rotateY(-90deg) rotateZ(90deg) translateZ(120px); 
+        -ms-transform: rotateY(-90deg) rotateZ(90deg) translateZ(120px); 
+        transform: rotateY(-90deg) rotateZ(90deg) translateZ(120px); 
+    }
+    .spinner .face6 { 
+        -webkit-transform: rotateX(-90deg) translateZ(120px); 
+        -ms-transform: rotateX(-90deg) translateZ(120px); 
+        transform: rotateX(-90deg) translateZ(120px); 
+    }
+    
+    .spinner {
+        -webkit-animation: spincube 12s ease-in-out infinite;
+        animation: spincube 12s ease-in-out infinite;
+        -webkit-transform-style: preserve-3d;
+        -ms-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        -webkit-transform-origin: 120px 120px 0;
+        -ms-transform-origin: 120px 120px 0;
+        transform-origin: 120px 120px 0;
+    }
+}
+/* END OF MEDIA QUERY - CUBE */
+
+
 
 /* SKILLS */
 
